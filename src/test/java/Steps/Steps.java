@@ -16,11 +16,12 @@ public class Steps {
 	@Dado("^que o usuario acesse a URL \"([^\"]*)\"$")
 	public void que_o_usuario_acesse_a_URL(String site) throws Throwable {
 	    m.executarNavegador(site);
+	    
 	}
 
 	@Dado("^selecione o campo abrir conta$")
 	public void selecione_o_campo_abrir_conta() throws Throwable {
-	   
+	  m.clicar(e.getBtnAbrirConta());
 	}
 
 	@Dado("^selecione o tipo de pessoa fisica$")
