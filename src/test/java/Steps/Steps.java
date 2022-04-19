@@ -26,7 +26,7 @@ public class Steps {
 
 	@Dado("^selecione o tipo de pessoa fisica$")
 	public void selecione_o_tipo_de_pessoa_fisica() throws Throwable {
-	   
+	   m.clicar(e.getBtnAbrirContaPf());
 	}
 
 	@Dado("^prencha os dados$")
